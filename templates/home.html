@@ -1,0 +1,21 @@
+{% extends "base.html"%}
+
+{%block title%} HOME {%endblock%}
+
+{%block content%}
+<h1>Login Page</h1>
+<form action="/login" method="POST">
+    <label for="">Username : </label>
+    <input type="text" name="abc" id=""><br><br>
+
+    <label for="">Password : </label>
+    <input type="password" name="xyz" id=""><br><br>
+
+
+    <button type="submit">LOGIN</button>
+    <a href="{{url_for('create')}}"><button>ADD STUDENTS</button></a>
+</form>
+
+
+
+{%endblock%}

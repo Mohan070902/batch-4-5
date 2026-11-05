@@ -1,0 +1,22 @@
+{% extends "base.html"%}
+
+{%block title%} COURSE {%endblock%}
+
+{%block content%}
+<h1>Course Page</h1>
+<table border="2">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>COURSE</th>
+    </tr>
+
+    <tr>
+        <td>{{student[0]}}</td>
+        <td>{{student[1]}}</td>
+        <td>{{student[2]}}</td>
+    </tr>  
+
+</table><br><br>
+<a href="{{url_for('add')}}"><button>ADD</button></a>
+{%endblock%}

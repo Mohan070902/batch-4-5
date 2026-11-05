@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>{%block title%} WEB PROJECT {%endblock%}</title>
+</head>
+<body>
+    <a href="{{url_for('home')}}">HOME</a>
+    <a href="{{url_for('about')}}">ABOUT</a>
+    <a href="{{url_for('course')}}">COURSE</a>
+    <a href="{{url_for('contact')}}">CONTACT</a>
+    <hr>
+    
+    {%block content%}
+
+    {%endblock%}
+    <hr>
+
+
+    <footer>
+        <p>Copyrights 2026.... </p>
+    </footer>
+
+
+</body>
+</html>
